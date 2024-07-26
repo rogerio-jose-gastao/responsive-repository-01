@@ -83,6 +83,10 @@ span{
   transition: 0.3s ease;
 }
 
+.navbar #menu-icon{
+  display: none;
+}
+
 .navbar a:hover{
   border-bottom: 3px solid var(--main-color);
   color: var(--main-color);
@@ -426,6 +430,10 @@ section{
     padding: none;
   }
 
+  .navbar #menu-icon{
+    display: flex;
+  }
+
   .about-content{
     text-align: center;
     align-items: center;
@@ -451,11 +459,5 @@ section{
 
   .hideOnMobile{
     display: none
-  }
-}
-
-@media screen and (max-width: 400px){
-  .sidebar{
-    width: 100%;
   }
 }
